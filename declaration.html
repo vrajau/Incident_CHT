@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+	<html>
+			<head>
+					<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+					<meta http-equiv="X-UA-Compatible" content="IE=edge">
+					<link rel="icon" href="image/favicon.ico" type="image/vnd.microsoft.icon">
+					<title> Déclaration d'incident </title>
+					<link rel="stylesheet" type="text/css" href="declaration.css">
+					<!--[if lt IE 9]>
+					<link rel="stylesheet" type="text/css" href="declaration-ie8.css">
+					<![endif]-->
+					
+				
+			</head>
+			<body>
+				<div id="container">
+					<noscript> Vous devez activer Javascript pour utiliser ce formulaire </noscript>
+					<div id="infoTech"> 
+						<img src="image/logo.png" alt="logo hopital" id="logo">
+						<h3> Informations Techniques </h3>
+						<ul>
+							<li> Adresse IP : <span id="idIp" class="infoTech"></span></li>
+							<li> Nom du PC : <span id="idPcname" class="infoTech"></span></li>
+						</ul>
+					</div>
+						
+					
+						<h3 class="titre"> Formulaire Rapide de Déclaration d'Incidence </h3>
+						
+					
+					<div id="formIncident">
+							<p class="legend"> Champs obligatoires </p>
+						<form action="serverVerif/registerHelp.php" method="post" id="formHelp" >
+							<fieldset>
+								<legend> Description du Problème </legend>
+								<p>Nom d'Utilisateur : <input type="text"  id="idUser" name="nomUtilisateur"><span id="imageUser"></span> </p>
+								<p>Numéro de Téléphone (5 chiffres Exemple : 55226) : <input type="text" id="idPoste" name="postePersonne"><span id="imagePoste"></span></p>
+								<p>Pavillon et Etage(0 = RDC) : <input type="text" maxlength="5" size="3" id="idPavillon" name="pavillonPersonne"><span id="imagePavillon"></span></p>
+								<p>Service :  <select id="idService" name="service"></select> </p>
+								<p>Type de Problème :  <select id="typeP" name="typeProbleme">
+															<option value="-1"> Choisir un type de problème</option>
+															<option value="1"> Matériel </option>
+															<option value="2"> Logiciel </option>
+															<option value="3">Problème Patient </option>
+																				</select> </p>
+																
+								<p id="nomL"></p>
+								<p>Catégories : <span id="catP"></span> </p>
+								<p class="facultatif"><input type="checkbox" name="thispc">Cochez cette case si le problème ne concerne pas ce PC</p>
+								<p class="important"> <input type="checkbox" name="urgent">Demande Urgente</p>
+							
+							</fieldset>
+							<fieldset>
+								<legend> Informations Complémentaires </legend>
+								<textarea cols="50" rows="10" name="complement" id="comp"></textarea>
+							</fieldset>
+							<p><input type="hidden" id="idIpHidden" name="ip">
+								<input type="hidden" id="idPcnameHidden" name="pc">
+							<input type="button" value="Envoyer la requête" id="buttonSubmit"></p>
+										
+						</form>
+					
+					</div>
+				</div>	
+				<script type="text/javascript" src="javascript/utils.js"></script>
+				<script type="text/javascript" src="javascript/fonctionsUtiles.js"></script>
+				<script type="text/javascript" src="javascript/incident.js" ></script>
+			</body>
+	</html>
+					

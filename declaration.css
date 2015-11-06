@@ -1,0 +1,224 @@
+html{
+	background-color: #F5F8FF;
+}
+
+body{
+	font-family: Cambria, Georgia, serif;
+	color: #415E6B;
+}
+
+#container {
+		border: 1px solid #415E6B;
+		width: 100%;	
+}
+
+h3{
+	text-align: center;
+	text-decoration: underline;
+	margin-top : 0px;
+
+
+}
+.titre{
+position: relative;
+bottom: 200px;
+}	
+
+/*
+*	Propriétés CSS pour les informations techniques et le logo
+*/
+
+#logo{
+	margin-left: 76px;
+}
+#infoTech{
+		border: 1px solid #415E6B;
+		background-color: #61C2EF;
+		width: 300px;
+		margin-right: 10px;
+		border-top: 0;
+		border-left: 0;
+	    border-bottom-right-radius: 7px;
+}
+#infoTech  > ul > li {
+	list-style-type: none;
+	padding: 5px;
+	font-weight: bold;
+}
+.infoTech{
+	color: white;
+	margin-left: 3px;
+}
+
+/*
+* Propriétés CSS pour le formulaire
+*/
+
+.important{
+	color: #FF1A1A	;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.facultatif{
+	color: #0B680B;
+	text-align: center;
+}
+
+#formIncident {
+	width: 750px;
+	margin: auto;
+    position: relative;
+	bottom: 150px;
+
+}
+
+fieldset{
+	margin: 5%;
+	border-color:#61C2EF;
+	padding: 10px;
+}
+
+legend{
+	color: black;
+}
+
+textarea{
+	resize: none;
+	margin: auto;
+	width: 100%;
+}
+
+#buttonSubmit{
+	margin-bottom: 10px;
+	margin-left: 35%;
+	width: 300px;
+	
+}
+
+
+input{
+	margin: 10px;
+}
+input[type=text], select{
+	outline: 0px;
+	border: 1px dotted #61C2EF;
+}
+
+
+#imageUser> img,#imagePoste > img ,#imagePavillon > img, #imageLogiciel > img, #imageEtage > img{
+
+margin-left: 0;
+
+}
+
+#imageUser> a > img,#imagePoste > a >img ,#imagePavillon >a> img,#imageLogiciel > a > img,#imageEtage > a >img{
+
+margin-left: 0;
+border:0;
+
+
+}
+
+@media (max-width: 1300px){
+
+	#container{position:absolute; width: 800px;}
+	#formIncident{width: 500px; top: 10px; right:140px;}
+	#infoTech{ width: 400px;}
+	fieldset{width:700px;}
+	.titre{ bottom:0px;margin-bottom:0; right:165px; margin-top: 10px;}
+	#buttonSubmit{margin:0; position:relative; bottom:20px; left: 24px;}
+	#logo{ margin-left: 127px;}
+
+}
+
+
+
+.precisionErreur{
+	display: inline;
+	position: relative;
+	text-decoration: none;
+
+	
+
+}
+
+.precisionErreur:hover:after{
+    background-color: #A60000;
+	border: 1px solid #500000;
+	top: 10px;
+    color: white;
+    content: attr(title);
+    padding: 5px 15px;
+    position: absolute;
+    width: 200px;
+	z-index: 1;
+}
+
+.legend{
+	margin-left: 30px;
+	font-size: small;
+	border: 1px dotted #61C2EF;
+	width:130px;
+	padding: 3px;
+}
+
+
+#typeP{
+	margin-left: 30px;
+}
+#categorie{
+	margin-left: 82px;
+	width: 191px;
+}
+#idLogiciel{
+	margin-left: 43px;
+	width: 191px;
+}
+
+
+noscript{
+	font-size: 2em;
+	color: red;
+}
+
+
+/*Page de confirmation */
+
+#confirme{
+	border: 2px dotted #61C2EF;
+	width: 700px;
+	margin: auto;
+	
+}
+
+#confirme h1{
+	text-align: center;
+	margin-top: 0;
+}
+
+#confirme p {
+	margin-left: 30px;
+}
+
+#confirme a{
+	text-decoration: none;
+	color: #415E6B;
+	display: block;
+	text-align: center;
+	margin-bottom: 10px; 
+}
+
+#confirme a:hover{
+	text-decoration: underline;
+}
+
+#confirme a:after{
+	color: #415E6B;
+}
+
+#confirme a:active{
+	color: blue;
+}
